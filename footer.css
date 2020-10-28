@@ -1,0 +1,31 @@
+.container-footer {
+    background-color: #f6f6f6;
+    /* height: 500px; */
+    /* border: 1px solid green; */
+}
+.hr-footer {
+    width: 95%;
+}
+.inner-copyright-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+ul.submenu-column-footer {
+    list-style: none;
+}
+.column-footer a {
+    text-decoration: none;
+    color: #121212;
+}
+.submenu-column-footer> li:first-child {
+    font-size: larger;
+    font-weight: 600;
+}
+.column-footer {
+    line-height: 1.5;
+}
+.inner-footer {
+    display: flex;
+    
+}

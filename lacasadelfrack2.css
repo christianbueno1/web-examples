@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&family=Roboto&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Local font */
+/* @font-face { 
+    font-family: "Open Sans"; 
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"), 
+         url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); 
+  } */
+/* * {
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+}
+
+/* menu */
+ ul> li> a {
+     text-decoration: none;
+     color: #121212;
+     font-weight: 900;
+     /* transition: color .3s ease; */
+ } 
+ ul> li:hover> a {
+     color: #DBDBDB;
+     /* color: red; */
+ }
+.menu> ul {
+    list-style: none;
+}
+
+.menu> ul> li {
+    /* you can use, display: flex; */
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+.menu> ul> li:hover {
+    background-color: #494949;
+    border-radius: 7px;
+}
+
+
+.header1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 3fr; */
+    /* justify-content: flex-end; */
+    /* margin-left: 400px; */
+    /* margin-right: 40%; */
+}
+.logo {
+    /* width: 100px; */
+    cursor: pointer;
+    flex: 1;
+    margin-left: 5%;
+}
+.logo> img {
+    width: 50px;
+}
+.menu{
+    flex: 3;
+}
+.menu> ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-lottie {
+    width: 300px;
+}
+.search-box {
+    /* vertical-align: middle; */
+}
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 1);
+}
+img.icon-24px {
+    /* for svg use, transform: scale(2.5) */
+    /* background-color: red; */
+    /* transform: scale(4.5); */
+}
+
+/* test svg */
+.inner-svg {
+    /* border: 1px solid #323232; */
+    width: 100px;
+    height: 100px;
+    padding : 2em 0;
+}
+.td-svg {
+    /* padding-top: .25em; */
+}
+.inner-svg2 {
+    width: 200px;
+    /* background-color: red; */
+    /* border: 1px solid green; */
+}
+.logo-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.logo-img-svg {
+    width: 16px;
+    /* height: 16px; */
+    /* border: 1px solid orange; */
+}
+.header2 {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.banner-container {
+    /* background-color: red; */
+    background-image: url(./lacasadelfrack-images/shirt-mrushad-khombhadia-GlgDs6_WhTg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: block;
+}
+
+/* 3 icons, account, heart, bag */
+.icons-ahb {
+    width: 16px;
+    /* height: 16px; */
+}
+.container-icons-ahb {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.icons-ahb img {
+    width: 100%;
+}

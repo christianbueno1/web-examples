@@ -1,0 +1,51 @@
+/* Input Animations With HTML And CSS || Border Effect On Input */
+/* https://www.youtube.com/watch?v=yHtjwK3I4kY */
+
+
+.subscribete-label {
+    text-transform: uppercase;
+}
+.inner-newsletter> form {
+    width: 450px;
+    height: 50px;
+    position: relative;
+}
+.inner-newsletter> form>  input#email-newsletter-id {
+    width: 100%;
+    height: 100%;
+    /* border: none; */
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #121212;
+    padding-bottom: .25em;
+    transition: 0.4s;
+    /* border: 1px solid green; */
+}
+.inner-newsletter> form > span.focus-border {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    /* width: 6em; */
+    width: 0;
+    height: 2px;
+    background-color: #373737;
+    transition: 0.4s;
+}
+:focus {
+    outline: none;
+}
+.inner-newsletter> form>  input#email-newsletter-id:focus ~ span.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+.container-newsletter {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.inner-newsletter {
+    margin: auto;
+}
+.title-newsletter {
+    text-align: center;
+    text-transform: uppercase;
+}

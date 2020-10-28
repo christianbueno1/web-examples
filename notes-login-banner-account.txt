@@ -1,0 +1,15 @@
+mango, login
+h&m, login
+asos, login
+horizontall scroll items
+
+float, for position each one left, right, 
+father {display: inline-block;}
+e1 {float: left;}
+e2 {float:right;}
+
+all the inner divs to the left
+father inner {float:left; clear:none;}
+<father>
+    <inner> 
+    <inner>

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+.container-menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-left: 50%;
+}
+.inner-menu> ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.inner-menu> ul> li {
+    display: inline-block;
+    margin: 0 1em;
+}
+.inner-menu> ul> li> a {
+    text-decoration: none;
+    color: #121212;
+}
+body {
+    background: hsla(233, 53%, 66%, 1);
+
+    background: linear-gradient(45deg, hsla(233, 53%, 66%, 1) 0%, hsla(204, 74%, 70%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(233, 53%, 66%, 1) 0%, hsla(204, 74%, 70%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(233, 53%, 66%, 1) 0%, hsla(204, 74%, 70%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B85D6", endColorstr="#78BDEB", GradientType=1 );
+    /* background: cornflowerblue; */
+    height: 100vh;
+}

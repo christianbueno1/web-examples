@@ -1,0 +1,29 @@
+body {
+    color: #006FAA;
+}
+header {
+    display: flex;
+    height: 100vh;
+
+}
+.wrapper {
+    background-color: #E8F7FF;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
+    grid-auto-rows: 6em;
+    grid-gap: 1em;
+    padding: 1em;
+
+}
+.mybox {
+    background-color: #D0EFFF;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 6em;
+}
+.mybox:hover {
+    background-color: #B9E7FF;
+    cursor: pointer;
+}

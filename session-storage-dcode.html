@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <section>
+        
+    </section>
+    <script>
+        // Cookies vs. Local Storage vs. Sesion Storage
+        const client = {name:'Bob',age:45}
+        sessionStorage.setItem('occupation','Software Developer')
+        sessionStorage.setItem('person', JSON.stringify(client))
+        sessionStorage.setItem('email', 'bla@marvel.com')
+        
+        // sessionStorage.removeItem('person')
+        // sessionStorage.clear()
+
+        console.log(sessionStorage.getItem('occupation'))
+        console.log(JSON.parse(sessionStorage.getItem('person')))
+        console.log(sessionStorage.getItem('email'))
+        
+
+        const key = sessionStorage.key(3)
+        console.log(`${key} =>\`backtick\``)
+        console.log(sessionStorage.getItem(key))
+        console.log('one line\nsecondline')
+        console.log(`template
+        literals here
+        last line`)
+
+        // Tag functions
+        function template(mystring, ...keys){
+            return `mystring[1]${keys[1]}mystring[0]${keys[0]}`
+        }
+        let n1 = 10
+        let n2 = 5
+        let numbers = [7,8,9]
+        console.log('numbers -->', typeof(numbers))
+        console.log(`The sum is ${n1+n2}, n1 = ${n1}, n2 = ${n2}`)
+        let message = template`message the num1 is ${n1}, the num2 is ${n2}`
+        // null, undefinded
+        console.log(message)
+        console.log(numbers[3])
+        console.log(null || 'empty')
+        console.log(numbers[3] || 'empty')
+        let z = [numbers[0]]
+        console.log(z)
+        console.log(typeof(z))
+        numbers.push(10,11)
+        console.log(numbers)
+        z = false? '5':5;
+        console.log(z)
+        console.log(typeof(z))
+
+    </script>
+</body>
+</html>

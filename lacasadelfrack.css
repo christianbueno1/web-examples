@@ -1,0 +1,28 @@
+
+span.icon-outline-foo::before {
+    content: "";
+    background: url('lacasadelfrack-images/box.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    /* display: inline-block; */
+    float: left;
+    margin: 0 6px 0 0;
+}
+p.icon2 {
+    background-image: url('lacasadelfrack-images/box.svg');
+    /* background-position: left center; */
+    background-repeat: no-repeat;
+    padding-left: 1.25em;
+
+}
+.my-icon {  
+    color: red;
+}
+
+span.my-icon3::before {
+    content: "";
+    background: url("lacasadelfrack-images/tor.svg");
+    width: 100px;
+    height: 100px;
+}
