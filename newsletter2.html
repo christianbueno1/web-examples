@@ -16,12 +16,13 @@
                     <h2>Subscr&iacute;bete a nuestra newsletter</h2>
                 </div>
                 <form action="#">
-                    <input type="email" id="email-newsletter-id">
+                    <input type="text" id="email-newsletter-id" pattern="^[a-zA-Z0-9]+[.|-]?([a-zA-Z0-9][.|-]?)*@([a-zA-Z0-9][-]?)+([.][a-z]{2,63})+" title="Ingrese el email" value="" required placeholder=" ">
                     <span class="focus-border"></span>
                     <div class="label-newsletter"><label for="email-newsletter-id">Introduce tu e-mail aqu&iacute;</label></div>
                 </form>
             </div>
         </div>
     </footer>
+    <script src="newsletter.js"></script>
 </body>
 </html>

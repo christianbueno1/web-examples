@@ -1,0 +1,33 @@
+
+form {
+    display: flex;
+}
+#email-newsletter-id:focus ~ div.label-newsletter> label {
+    /* border: 10px dotted orange; */
+    background-color: rgba(163, 136, 62, 0.342);
+}
+#email-newsletter-id:valid:focus ~ div.label-newsletter> label {
+    border-top: 10px dotted rgb(109, 85, 41);
+}
+#email-newsletter-id:invalid ~ div.label-newsletter> label {
+    border-left: 20px dotted red;
+}
+#email-newsletter-id:valid ~ div.label-newsletter> label {
+    border-bottom: 5px dashed gray;
+}
+#email-newsletter-id:not([value]) ~ div.label-newsletter> label {
+    border-right: 5px dashed blue;
+}
+#email-newsletter-id:valid:not([value]) ~ div.label-newsletter> label {
+    color: green;
+}
+#email-newsletter-id[value=""] ~ div.label-newsletter> label {
+    color: red;
+}
+#email-newsletter-id[value=""]:invalid ~ div.label-newsletter> label {
+    /* color: pink; */
+    font-size: xx-large;
+}
+#email-newsletter-id:not(:placeholder-shown):not(:focus):invalid ~ div.label-newsletter> label {
+    display: none;
+}

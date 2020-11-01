@@ -62,7 +62,34 @@
     font-size: larger;
     cursor: text;
 }
-.inner-newsletter> form>  input#email-newsletter-id:focus ~ div.label-newsletter, input#email-newsletter-id:valid ~ div.label-newsletter {
+
+#email-newsletter-id:focus ~ div.label-newsletter> label {
+   display: none;
+}
+#email-newsletter-id:valid:focus ~ div.label-newsletter> label {
+    /* border-top: 10px dotted rgb(109, 85, 41); */
     display: none;
-    border: 2px dotted orange;
+}
+#email-newsletter-id:invalid ~ div.label-newsletter> label {
+    border-left: 20px dotted red;
+    /* display: none; */
+}
+#email-newsletter-id:valid ~ div.label-newsletter> label {
+    /* border-bottom: 5px dashed gray; */
+    display: none;
+}
+#email-newsletter-id:not([value]) ~ div.label-newsletter> label {
+    border-right: 5px dashed blue;
+}
+#email-newsletter-id:valid:not([value]) ~ div.label-newsletter> label {
+    color: green;
+}
+#email-newsletter-id[value=""] ~ div.label-newsletter> label {
+    color: red;
+}
+#email-newsletter-id[value=""]:invalid ~ div.label-newsletter> label {
+    color: pink;
+}
+#email-newsletter-id:not(:placeholder-shown):invalid ~ div.label-newsletter> label {
+    display: none;
 }
