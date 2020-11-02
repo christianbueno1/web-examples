@@ -29,5 +29,37 @@ form {
     font-size: xx-large;
 }
 #email-newsletter-id:not(:placeholder-shown):not(:focus):invalid ~ div.label-newsletter> label {
-    display: none;
+    letter-spacing: 3px;
+    /* line-height: 12px; */
+    /* text-transform: uppercase; */
+    /* font-style: italic; */
+    /* font-weight: 900; */
+    /* font-weight: lighter; */
+}
+#email-newsletter-id:not(:placeholder-shown) ~ div.label-newsletter> label {
+    text-transform: uppercase;
+}
+#email-newsletter-id:placeholder-shown {
+    border-bottom-color: teal;
+    border-bottom-width: 8px;
+}
+#email-newsletter-id:not(:placeholder-shown) {
+    border-top-color: cornflowerblue;
+    border-top-width: 12px;
+}
+#email-newsletter-id:not(:placeholder-shown):invalid {
+    border-bottom-width: 8px;
+    border-bottom-color: darkgoldenrod;
+}
+#email-newsletter-id:not(:placeholder-shown):focus {
+    border-left-width: 10px;
+    border-left-color: rgb(107, 28, 107);
+    border-left-style: dotted;
+}
+#email-newsletter-id:not(:placeholder-shown):not(:focus) {
+    border-right-width: 12px;
+    border-right-color: darkseagreen;
+}
+#email-newsletter-id:not(:placeholder-shown):not(:focus):invalid {
+    background-color: darkturquoise;
 }
