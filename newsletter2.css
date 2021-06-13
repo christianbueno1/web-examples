@@ -90,6 +90,8 @@
 /* #email-newsletter-id[value=""]:invalid ~ div.label-newsletter> label {
     color: pink;
 } */
+
+/* when type in the input tag, the placeholder is removed and this becomes not-placeholder */
 #email-newsletter-id:not(:placeholder-shown):invalid ~ div.label-newsletter> label {
     display: none;
 }
